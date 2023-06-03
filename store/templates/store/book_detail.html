@@ -1,0 +1,22 @@
+{% extends "store/base.html" %}
+
+{% block title %}
+   Book_detail
+{% endblock %}
+
+{% block content %}
+<ul>
+  <li>{{title}}</li>
+  <li>(rating is : {{rating}})
+
+    {%if bestseller %}
+    its a best selling book
+
+       {% else %}
+       not a bestselling book
+
+        {% endif %}
+  </li>
+  <li>{{author}}</li>
+</ul>
+{% endblock %}
